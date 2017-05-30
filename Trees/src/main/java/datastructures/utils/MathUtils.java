@@ -1,4 +1,4 @@
-package datastructures.trees.utils;
+package datastructures.utils;
 
 /**
  * Some syntactic sugar for math operations.

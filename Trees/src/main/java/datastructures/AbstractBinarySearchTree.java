@@ -1,5 +1,4 @@
-package datastructures.trees;
-
+package datastructures;
 /**
  * Abstract binary search tree implementation. Its basically fully implemented
  * binary search tree, just template method is provided for creating Node (other
@@ -32,6 +31,14 @@ public abstract class AbstractBinarySearchTree {
      */
     protected abstract Node createNode(int value, Node parent, Node left, Node right);
 
+    /**
+     *
+     * @return root node
+     */
+    public Node root()
+    {
+        return root;
+    }
     /**
      * Finds a node with concrete value. If it is not found then null is
      * returned.
@@ -336,48 +343,5 @@ public abstract class AbstractBinarySearchTree {
     }
 
 
-    public static class Node {
-        public Node(Integer value, Node parent, Node left, Node right) {
-            super();
-            this.value = value;
-            this.parent = parent;
-            this.left = left;
-            this.right = right;
-        }
 
-        public Integer value;
-        public Node parent;
-        public Node left;
-        public Node right;
-        
-        public boolean isLeaf() {
-            return left == null && right == null;
-        }
-
-        @Override
-        public int hashCode() {
-            final int prime = 31;
-            int result = 1;
-            result = prime * result + ((value == null) ? 0 : value.hashCode());
-            return result;
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj)
-                return true;
-            if (obj == null)
-                return false;
-            if (getClass() != obj.getClass())
-                return false;
-            Node other = (Node) obj;
-            if (value == null) {
-                if (other.value != null)
-                    return false;
-            } else if (!value.equals(other.value))
-                return false;
-            return true;
-        }
-
-    }
 }

@@ -1,8 +1,8 @@
-package datastructures.trees.main;
+package datastructures.main;
 
 import java.util.Random;
 
-import datastructures.trees.RedBlackTree;
+import datastructures.RedBlackTree;
 
 public class Main {
 

@@ -1,6 +1,6 @@
-package datastructures.trees;
+package datastructures;
 
-import datastructures.trees.utils.MathUtils;
+import datastructures.utils.MathUtils;
 
 /**
  * AVL tree implementation.

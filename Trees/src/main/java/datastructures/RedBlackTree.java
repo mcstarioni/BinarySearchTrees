@@ -1,4 +1,4 @@
-package datastructures.trees;
+package datastructures;
 
 /**
  * Red-Black tree implementation. From Introduction to Algorithms 3rd edition.

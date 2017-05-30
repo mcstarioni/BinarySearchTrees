@@ -1,4 +1,4 @@
-package datastructures.trees;
+package datastructures;
 
 /**
  * Abstract class for self balancing binary search trees. Contains some methods
