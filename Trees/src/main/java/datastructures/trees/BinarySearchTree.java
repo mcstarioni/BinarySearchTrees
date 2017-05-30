@@ -1,4 +1,4 @@
-package org.intelligentjava.algos.trees;
+package datastructures.trees;
 
 /**
  * Binary search tree implementation.

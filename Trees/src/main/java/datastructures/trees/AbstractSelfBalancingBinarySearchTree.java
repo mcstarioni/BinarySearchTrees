@@ -1,4 +1,4 @@
-package org.intelligentjava.algos.trees;
+package datastructures.trees;
 
 /**
  * Abstract class for self balancing binary search trees. Contains some methods

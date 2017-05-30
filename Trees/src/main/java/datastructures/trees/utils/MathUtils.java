@@ -1,4 +1,4 @@
-package org.intelligentjava.algos.trees.utils;
+package datastructures.trees.utils;
 
 /**
  * Some syntactic sugar for math operations.

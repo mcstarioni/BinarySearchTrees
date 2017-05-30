@@ -1,8 +1,8 @@
-package org.intelligentjava.algos.trees.main;
+package datastructures.trees.main;
 
 import java.util.Random;
 
-import org.intelligentjava.algos.trees.RedBlackTree;
+import datastructures.trees.RedBlackTree;
 
 public class Main {
 

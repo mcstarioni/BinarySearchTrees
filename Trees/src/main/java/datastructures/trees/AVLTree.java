@@ -1,6 +1,6 @@
-package org.intelligentjava.algos.trees;
+package datastructures.trees;
 
-import org.intelligentjava.algos.trees.utils.MathUtils;
+import datastructures.trees.utils.MathUtils;
 
 /**
  * AVL tree implementation.
@@ -20,7 +20,7 @@ import org.intelligentjava.algos.trees.utils.MathUtils;
 public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
 
     /**
-     * @see org.intelligentjava.algos.trees.AbstractBinarySearchTree#insert(int)
+     * @see AbstractBinarySearchTree#insert(int)
      * 
      *      AVL tree insert method also balances tree if needed. Additional
      *      height parameter on node is used to track if one subtree is higher
@@ -35,7 +35,7 @@ public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
     }
 
     /**
-     * @see org.intelligentjava.algos.trees.AbstractBinarySearchTree#delete(int)
+     * @see AbstractBinarySearchTree#delete(int)
      */
     @Override
     public Node delete(int element) {
@@ -57,7 +57,7 @@ public class AVLTree extends AbstractSelfBalancingBinarySearchTree {
     }
     
     /**
-     * @see org.intelligentjava.algos.trees.AbstractBinarySearchTree#createNode(int, org.intelligentjava.algos.trees.AbstractBinarySearchTree.Node, org.intelligentjava.algos.trees.AbstractBinarySearchTree.Node, org.intelligentjava.algos.trees.AbstractBinarySearchTree.Node)
+     * @see AbstractBinarySearchTree#createNode(int, Node, Node, Node)
      */
     @Override
     protected Node createNode(int value, Node parent, Node left, Node right) {

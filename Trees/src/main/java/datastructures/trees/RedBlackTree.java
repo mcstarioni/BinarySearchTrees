@@ -1,4 +1,4 @@
-package org.intelligentjava.algos.trees;
+package datastructures.trees;
 
 /**
  * Red-Black tree implementation. From Introduction to Algorithms 3rd edition.
@@ -17,7 +17,7 @@ public class RedBlackTree extends AbstractSelfBalancingBinarySearchTree {
     protected static final RedBlackNode nilNode = new RedBlackNode(null, null, null, null, ColorEnum.BLACK);
 
     /**
-     * @see org.intelligentjava.algos.trees.AbstractBinarySearchTree#insert(int)
+     * @see AbstractBinarySearchTree#insert(int)
      */
     @Override
     public Node insert(int element) {
@@ -74,7 +74,7 @@ public class RedBlackTree extends AbstractSelfBalancingBinarySearchTree {
     }
     
     /**
-     * @see org.intelligentjava.algos.trees.AbstractBinarySearchTree#createNode(int, org.intelligentjava.algos.trees.AbstractBinarySearchTree.Node, org.intelligentjava.algos.trees.AbstractBinarySearchTree.Node, org.intelligentjava.algos.trees.AbstractBinarySearchTree.Node)
+     * @see AbstractBinarySearchTree#createNode(int, Node, Node, Node)
      */
     @Override
     protected Node createNode(int value, Node parent, Node left, Node right) {
